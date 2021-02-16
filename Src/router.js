@@ -1,7 +1,7 @@
 const routes = [
 	//set your routes here
   { path: '/', component: Home },
-  // { path: '/about', component: About },
+  { path: '/components', component: Components },
 
 	
   { path: '*', component: Page404 }

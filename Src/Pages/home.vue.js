@@ -27,7 +27,7 @@ const Home = Vue.component('Home', {
 			<h2 class="dk-form-title">Register</h2>
 			<label class="dk-input-label">
 				<ion-icon class="dk-input-icon" name="mail-outline"></ion-icon>
-				<input type="email" class="dk-input-box" v-model="form.email" placeholder="Your email..." />
+				<input type="email" class="dk-input-box" v-model="form.email" placeholder="Your email..." required/>
 			</label>
 			<label class="dk-input-label">
 				<ion-icon class="dk-input-icon" name="lock-closed-outline"></ion-icon>
