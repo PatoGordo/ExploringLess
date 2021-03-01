@@ -2,7 +2,13 @@ const app = new Vue({
 	router, //router from Src/router.js
 	el: "#app",
 	data: {
-
+		isDark: false
+	},
+	methods:{
+		
+	},
+	created(){
+		
 	},
 	template: `
 		<div id="app">

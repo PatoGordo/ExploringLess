@@ -1,13 +1,20 @@
 const Components = Vue.component('Components', {
   data: function () {
     return {
-			openbars: false
+			openbars: false,
+			isDark: false
     }
   },
 	methods:{
 		changeOpenBars(){
 			this.openbars = !this.openbars
+		},
+		changeDarkMode(){
+			
 		}
+	},
+	created(){
+		
 	},
   template: `
 	<div class="component components">
@@ -17,8 +24,8 @@ const Components = Vue.component('Components', {
 			<input type="checkbox">
 			<span class="dk-slider"></span>
 		</label>
-		<label class="dk-switch">
-			<input type="checkbox">
+		<label class="dk-switch" @click="changeDarkMode()">
+			<input type="checkbox" @click="changeDarkMode()" :checked="isDark">
 			<span class="dk-slider round"></span>
 		</label>
 
